@@ -6,6 +6,6 @@ from . import views
 
 urlpatterns = [
     url(r'^measurements/', views.PlacesList),
-    url(r'^measurementcreate/$', csrf_exempt(views.PlaceCreate), name='measurementCreate'),
-    url(r'^createmeasurements/$', csrf_exempt(views.PlacesCreate), name='createMeasurements'),
+    url(r'^measurementcreate/$', csrf_exempt(views.PlaceCreate), name='placeCreate'),
+    url(r'^createmeasurements/$', csrf_exempt(views.PlacesCreate), name='createPlaces'),
 ]
